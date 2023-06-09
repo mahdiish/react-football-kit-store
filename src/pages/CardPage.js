@@ -1,5 +1,5 @@
 function CardPage() {
-  return <div>Card</div>;
+  return <div className="text-white">Card</div>;
 }
 
 export default CardPage;
