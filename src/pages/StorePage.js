@@ -1,6 +1,8 @@
 import Form from "../components/Form";
 import KitItem from "../components/KitItem";
 import { kitItems } from "../data/data";
+import Footer from "../components/Footer";
+
 function StorePage() {
   console.log(kitItems);
   const renderedKitItems = kitItems.map((item) => {
@@ -16,6 +18,7 @@ function StorePage() {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-1 gap-y-4">
         {renderedKitItems}
       </div>
+      <Footer />
     </div>
   );
 }
