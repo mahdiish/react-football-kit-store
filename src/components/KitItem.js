@@ -9,9 +9,10 @@ function KitItem({ item }) {
         alt={`${item.name} - ${item.location}`}
         className="bg-white h-72 w-full rounded-t-lg"
       />
-      <p className="text-white font-bold">{`${item.name} - ${item.location}`}</p>
+      <p className="text-white font-bold">{item.name}</p>
       <p className="text-white mb-1.5 mt-1">
-        {item.cost} <span className="text-white font-bold">$</span>
+        {item.location} <span className="text-white font-bold">|</span>{" "}
+        {item.cost}$
       </p>
       <button className="text-white rounded-sm px-3.5 py-2 bg-orange-500 hover:bg-orange-600">
         Add to Card
