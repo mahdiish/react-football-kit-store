@@ -9,11 +9,11 @@ function StorePage() {
 
   return (
     <div className="h-full">
-      <h1 className="text-white">Store</h1>
+      <h1 className="text-white text-center font-bold tracking-widest">
+        Store
+      </h1>
       <Form />
-      <div className="grid grid-cols-4 gap-x-1 gap-y-4 my-4">
-        {renderedKitItems}
-      </div>
+      <div className="grid grid-cols-4 gap-x-1 gap-y-4">{renderedKitItems}</div>
     </div>
   );
 }
