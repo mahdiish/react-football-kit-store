@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <div className="flex flex-col sm:flex-row items-center h-full">
         <SideBar />
-        <div className="w-full h-screen bg-black px-3 sm:w-4/5 sm:ml-[20%]">
+        <div className="w-full h-screen bg-black px-3 overflow-y-scroll sm:w-4/5 sm:ml-[20%]">
           <Routes>
             <Route path="/" element={<StorePage />} />
             <Route path="/card" element={<CardPage />} />
