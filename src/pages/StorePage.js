@@ -1,13 +1,33 @@
+import { useSelector } from "react-redux";
 import Form from "../components/Form";
 import KitItem from "../components/KitItem";
 import { kitItems } from "../data/data";
 import Footer from "../components/Footer";
 
 function StorePage() {
-  console.log(kitItems);
-  const renderedKitItems = kitItems.map((item) => {
-    return <KitItem item={item} />;
+  const { league, location, searchTerm } = useSelector((state) => {
+    return {
+      league: state.form.league,
+      location: state.form.location,
+      searchTerm: state.form.searchTerm,
+    };
   });
+
+  const renderedKitItems = kitItems
+    .filter((item) => {
+      return league !== "All Leagues" ? item.league === league : item;
+    })
+    .filter((item) => {
+      return location !== "Home & Away" ? item.location === location : item;
+    })
+    .filter((item) => {
+      return item.name
+        .toLocaleLowerCase()
+        .includes(searchTerm.toLocaleLowerCase());
+    })
+    .map((item) => {
+      return <KitItem key={`${item.name}-${item.location}`} item={item} />;
+    });
 
   return (
     <div className="h-full">

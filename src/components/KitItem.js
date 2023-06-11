@@ -1,9 +1,6 @@
 function KitItem({ item }) {
   return (
-    <div
-      key={`${item.name}-${item.location}`}
-      className="flex flex-col items-center border border-white rounded-lg pb-1.5"
-    >
+    <div className="flex flex-col items-center border border-white rounded-lg pb-1.5">
       <img
         src={item.src}
         alt={`${item.name} - ${item.location}`}

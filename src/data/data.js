@@ -337,7 +337,7 @@ export const kitItems = [
   },
   {
     name: "Paris Saint-Germain",
-    league: "Other Legues",
+    league: "Other Leagues",
     location: "Away",
     src: ParisSaintGermainAway,
     cost: 280,
@@ -351,7 +351,7 @@ export const kitItems = [
   },
   {
     name: "Ajax Amsterdam",
-    league: "Other Legues",
+    league: "Other Leagues",
     location: "Away",
     src: AjaxAmsterdamAway,
     cost: 280,
@@ -365,7 +365,7 @@ export const kitItems = [
   },
   {
     name: "Celtic",
-    league: "Other Legues",
+    league: "Other Leagues",
     location: "Away",
     src: CelticAway,
     cost: 280,
@@ -379,7 +379,7 @@ export const kitItems = [
   },
   {
     name: "FC Porto",
-    league: "Other Legues",
+    league: "Other Leagues",
     location: "Away",
     src: FCPortoAway,
     cost: 280,

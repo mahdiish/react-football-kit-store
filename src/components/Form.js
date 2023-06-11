@@ -27,6 +27,7 @@ function Form() {
     <div className="flex flex-row justify-between px-3 my-5">
       <div className="flex flex-row justify-between mr-4 w-8/12 sm:w-4/6 sm:mr-6">
         <select
+          id="select-league"
           onChange={handleLeagueChange}
           value={league}
           className="text-black w-1/2 mr-3 sm:mr-2 px-1 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
@@ -36,9 +37,11 @@ function Form() {
           <option>LaLiga</option>
           <option>Bundesliga</option>
           <option>Serie A</option>
+          <option>Other Leagues</option>
         </select>
 
         <select
+          id="select-location"
           value={location}
           onChange={handleLocationChange}
           className="text-black w-1/2 px-1 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
@@ -49,6 +52,7 @@ function Form() {
         </select>
       </div>
       <input
+        id="search-team"
         placeholder="Search team..."
         value={searchTerm}
         onChange={handleSearchTermChange}
