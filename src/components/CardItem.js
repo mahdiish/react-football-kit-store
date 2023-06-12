@@ -1,5 +1,13 @@
+import { useDispatch } from "react-redux";
+import { removeCardItem } from "../store";
 import { MdDelete } from "react-icons/md";
+
 function CardItem({ item }) {
+  const dispatch = useDispatch();
+  const handleClick = () => {
+    dispatch(removeCardItem(item));
+  };
+
   return (
     <div className="flex flex-row h-14 w-full border border-white justify-between my-2 items-center pr-3">
       <img
@@ -13,7 +21,10 @@ function CardItem({ item }) {
       <p className="text-white">
         {item.number} × {item.cost}$ = {item.number * item.cost}$
       </p>
-      <MdDelete className="text-red-500 text-2xl cursor-pointer" />
+      <MdDelete
+        onClick={handleClick}
+        className="text-red-500 text-2xl cursor-pointer"
+      />
     </div>
   );
 }

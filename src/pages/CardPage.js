@@ -1,33 +1,18 @@
+import { useSelector } from "react-redux";
 import CardItem from "../components/CardItem";
 import Footer from "../components/Footer";
 
-import ManchesterCityHome from "../images/ManchesterCity-Home.jpg";
-import ManchesterCityAway from "../images/ManchesterCity-Away.jpg";
-const cardItems = [
-  {
-    name: "Manchester City",
-    league: "Premier League",
-    location: "Home",
-    src: ManchesterCityHome,
-    cost: 300,
-    number: 2,
-  },
-  {
-    name: "Manchester City",
-    league: "Premier League",
-    location: "Away",
-    src: ManchesterCityAway,
-    cost: 280,
-    number: 2,
-  },
-];
-const totalCardValue = cardItems.reduce((total, item) => {
-  return total + item.cost * item.number;
-}, 0);
-
 function CardPage() {
+  const { cardItems } = useSelector((state) => {
+    return { cardItems: state.card.cardItems };
+  });
+
+  const totalCardValue = cardItems.reduce((total, item) => {
+    return total + item.cost * item.number;
+  }, 0);
+
   const renderedCardItems = cardItems.map((item) => {
-    return <CardItem item={item} />;
+    return <CardItem key={`${item.name}-${item.location}`} item={item} />;
   });
 
   return (
