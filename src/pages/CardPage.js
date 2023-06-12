@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import CardItem from "../components/CardItem";
-import Footer from "../components/Footer";
 
 function CardPage() {
   const { cardItems } = useSelector((state) => {
@@ -22,7 +21,6 @@ function CardPage() {
       </h1>
       <div>{renderedCardItems}</div>
       <p className="text-white">Total Value: {totalCardValue}$</p>
-      <Footer />
     </div>
   );
 }

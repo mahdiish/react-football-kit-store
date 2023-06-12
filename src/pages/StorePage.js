@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 import Form from "../components/Form";
 import KitItem from "../components/KitItem";
 import { kitItems } from "../data/data";
-import Footer from "../components/Footer";
 
 function StorePage() {
   const { league, location, searchTerm } = useSelector((state) => {
@@ -35,10 +34,9 @@ function StorePage() {
         Store
       </h1>
       <Form />
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-1 gap-y-4">
+      <div className="grid grid-cols-2 pb-6 sm:grid-cols-3 md:grid-cols-4 gap-x-1 gap-y-4">
         {renderedKitItems}
       </div>
-      <Footer />
     </div>
   );
 }
