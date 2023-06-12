@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import classNames from "classnames";
+import { useSelector } from "react-redux";
 
 const linkClassNames =
   "mt-0 p-5 w-1/2 text-center sm:mt-5 sm:w-full sm:text-left";
@@ -14,13 +15,24 @@ const classNamesFn = ({ isActive }) => {
 };
 
 function SideBar() {
+  const { cardItems } = useSelector((state) => {
+    return { cardItems: state.card.cardItems };
+  });
+
+  const cardItemsNumber = cardItems.reduce((accumulator, current) => {
+    return accumulator + current.number;
+  }, 0);
+
   return (
     <div className="flex flex-row h-16 w-full pt-0 bg-black border-white border-b sm:flex-col sm:w-1/5 sm:h-full sm:pt-5 sm:border-r sm:fixed sm:top-0 sm:left-0">
       <NavLink to="/" className={classNamesFn}>
         Store
       </NavLink>
       <NavLink to="/card" className={classNamesFn}>
-        Card
+        Card{" "}
+        <span className="mx-2 py-0.5 px-2 bg-orange-500 rounded-full text-center text-white font-bold">
+          {cardItemsNumber}
+        </span>
       </NavLink>
     </div>
   );
