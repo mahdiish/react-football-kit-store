@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-football-kit-store/static/css/main.2185b86d.css",
-    "main.js": "/react-football-kit-store/static/js/main.2e4b74ff.js",
+    "main.js": "/react-football-kit-store/static/js/main.7f06892c.js",
     "static/media/Liverpool-Away.png": "/react-football-kit-store/static/media/Liverpool-Away.de8b3e7076df05cc8338.png",
     "static/media/JuventusFC-Home.png": "/react-football-kit-store/static/media/JuventusFC-Home.a220441eea1b4d57fa42.png",
     "static/media/Celtic-Home.png": "/react-football-kit-store/static/media/Celtic-Home.3729abe555982e061865.png",
@@ -52,10 +52,10 @@
     "static/media/BayernMunchen-Away.jpg": "/react-football-kit-store/static/media/BayernMunchen-Away.b4ff6616e70dd2f7a200.jpg",
     "index.html": "/react-football-kit-store/index.html",
     "main.2185b86d.css.map": "/react-football-kit-store/static/css/main.2185b86d.css.map",
-    "main.2e4b74ff.js.map": "/react-football-kit-store/static/js/main.2e4b74ff.js.map"
+    "main.7f06892c.js.map": "/react-football-kit-store/static/js/main.7f06892c.js.map"
   },
   "entrypoints": [
     "static/css/main.2185b86d.css",
-    "static/js/main.2e4b74ff.js"
+    "static/js/main.7f06892c.js"
   ]
 }
