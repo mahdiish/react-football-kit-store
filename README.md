@@ -1,3 +1,10 @@
+**Football Kit Store**
+
+This football kit store created in ReactJS, and the following packages used: Redux Toolkit, React Redux, React Router DOM, Tailwind CSS, React Icons, and Classnames.
+
+![image](https://github.com/mahdiish/react-football-kit-store/assets/119965498/7ea94cf9-7129-4537-b957-494bab939df7)
+
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
