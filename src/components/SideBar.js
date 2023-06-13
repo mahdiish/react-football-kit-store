@@ -25,10 +25,10 @@ function SideBar() {
 
   return (
     <div className="flex flex-row h-16 w-full pt-0 bg-black border-white border-b sm:flex-col sm:w-1/5 sm:h-full sm:pt-5 sm:border-r sm:fixed sm:top-0 sm:left-0">
-      <NavLink to="/" className={classNamesFn}>
+      <NavLink to="react-football-kit-store/" className={classNamesFn}>
         Store
       </NavLink>
-      <NavLink to="/cart" className={classNamesFn}>
+      <NavLink to="react-football-kit-store/cart" className={classNamesFn}>
         Cart{" "}
         <span className="mx-2 py-0.5 px-2 bg-orange-500 rounded-full text-center text-white font-bold">
           {cartItemsNumber}

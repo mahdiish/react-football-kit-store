@@ -10,8 +10,11 @@ function App() {
         <SideBar />
         <div className="w-full h-full overflow-y-scroll bg-black px-3 py-4 sm:w-4/5 sm:ml-[20%]">
           <Routes>
-            <Route path="/" element={<StorePage />} />
-            <Route path="/cart" element={<CartPage />} />
+            <Route path="react-football-kit-store/" element={<StorePage />} />
+            <Route
+              path="react-football-kit-store/cart"
+              element={<CartPage />}
+            />
           </Routes>
         </div>
       </div>
