@@ -15,15 +15,15 @@ function CardItem({ item }) {
         alt={`${item.name} - ${item.location}`}
         className="bg-white h-full"
       />
-      <p className="text-white font-bold">
+      <p className="text-white text-base font-bold">
         {item.name}-{item.location}
       </p>
-      <p className="text-white">
+      <p className="text-white text-base">
         {item.number} × {item.cost}$ = {item.number * item.cost}$
       </p>
       <MdDelete
         onClick={handleClick}
-        className="text-red-500 text-2xl cursor-pointer"
+        className="text-red-500 text-base text-2xl cursor-pointer"
       />
     </div>
   );

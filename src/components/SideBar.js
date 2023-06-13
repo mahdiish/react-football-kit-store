@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { useSelector } from "react-redux";
 
 const linkClassNames =
-  "mt-0 p-5 w-1/2 text-center sm:mt-5 sm:w-full sm:text-left";
+  "mt-0 p-5 w-1/2 text-base text-center sm:mt-5 sm:w-full sm:text-left";
 
 const activeLinkClassNames =
   "text-orange-500 font-bold bg-white border-b-4 border-l-0 border-orange-500 sm:border-l-4 sm:border-b-0";

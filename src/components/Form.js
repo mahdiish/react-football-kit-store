@@ -30,7 +30,7 @@ function Form() {
           id="select-league"
           onChange={handleLeagueChange}
           value={league}
-          className="text-black w-1/2 mr-3 sm:mr-2 px-1 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="text-black text-base w-1/2 mr-3 sm:mr-2 px-1 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
           <option>All Leagues</option>
           <option>Premier League</option>
@@ -44,7 +44,7 @@ function Form() {
           id="select-location"
           value={location}
           onChange={handleLocationChange}
-          className="text-black w-1/2 px-1 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="text-black text-base w-1/2 px-1 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
           <option>Home & Away</option>
           <option>Home</option>
@@ -56,7 +56,7 @@ function Form() {
         placeholder="Search team..."
         value={searchTerm}
         onChange={handleSearchTermChange}
-        className="text-orange-500 w-4/12 sm:w-2/6 px-2 h-9 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+        className="text-orange-500 text-base w-4/12 sm:w-2/6 px-2 h-9 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
       />
     </div>
   );
