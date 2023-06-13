@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const cardSlice = createSlice({
-  name: "card",
+const cartSlice = createSlice({
+  name: "cart",
   initialState: {
-    cardItems: [],
+    cartItems: [],
   },
   reducers: {
-    addCardItem(state, action) {
-      state.cardItems.push({
+    addCartItem(state, action) {
+      state.cartItems.push({
         name: action.payload.name,
         location: action.payload.location,
         src: action.payload.src,
@@ -16,7 +16,7 @@ const cardSlice = createSlice({
         id: `${action.payload.name}-${action.payload.location}`,
       });
 
-      const updatedCardItems = state.cardItems.reduce(
+      const updatedCartItems = state.cartItems.reduce(
         (accumulator, current) => {
           if (!accumulator.find((item) => item.id === current.id)) {
             accumulator.push(current);
@@ -32,10 +32,10 @@ const cardSlice = createSlice({
         },
         []
       );
-      state.cardItems = updatedCardItems;
+      state.cartItems = updatedCartItems;
     },
-    removeCardItem(state, action) {
-      const updatedCardItems = state.cardItems
+    removeCartItem(state, action) {
+      const updatedCartItems = state.cartItems
         .map((item) => {
           if (item.id === action.payload.id) {
             item.number--;
@@ -46,10 +46,10 @@ const cardSlice = createSlice({
         .filter((item) => {
           return item.number > 0;
         });
-      state.cardItems = updatedCardItems;
+      state.cartItems = updatedCartItems;
     },
   },
 });
 
-export const { addCardItem, removeCardItem } = cardSlice.actions;
-export const cardReducer = cardSlice.reducer;
+export const { addCartItem, removeCartItem } = cartSlice.actions;
+export const cartReducer = cartSlice.reducer;

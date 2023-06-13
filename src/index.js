@@ -5,9 +5,6 @@ import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "./store";
 
-// import StorePage from "./pages/StorePage";
-// import CardPage from "./pages/CardPage";
-
 const container = document.getElementById("root");
 const root = createRoot(container);
 

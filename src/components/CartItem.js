@@ -1,11 +1,11 @@
 import { useDispatch } from "react-redux";
-import { removeCardItem } from "../store";
+import { removeCartItem } from "../store";
 import { MdDelete } from "react-icons/md";
 
-function CardItem({ item }) {
+function CartItem({ item }) {
   const dispatch = useDispatch();
   const handleClick = () => {
-    dispatch(removeCardItem(item));
+    dispatch(removeCartItem(item));
   };
 
   return (
@@ -29,4 +29,4 @@ function CardItem({ item }) {
   );
 }
 
-export default CardItem;
+export default CartItem;

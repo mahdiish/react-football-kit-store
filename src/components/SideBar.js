@@ -15,11 +15,11 @@ const classNamesFn = ({ isActive }) => {
 };
 
 function SideBar() {
-  const { cardItems } = useSelector((state) => {
-    return { cardItems: state.card.cardItems };
+  const { cartItems } = useSelector((state) => {
+    return { cartItems: state.cart.cartItems };
   });
 
-  const cardItemsNumber = cardItems.reduce((accumulator, current) => {
+  const cartItemsNumber = cartItems.reduce((accumulator, current) => {
     return accumulator + current.number;
   }, 0);
 
@@ -28,10 +28,10 @@ function SideBar() {
       <NavLink to="/" className={classNamesFn}>
         Store
       </NavLink>
-      <NavLink to="/card" className={classNamesFn}>
-        Card{" "}
+      <NavLink to="/cart" className={classNamesFn}>
+        Cart{" "}
         <span className="mx-2 py-0.5 px-2 bg-orange-500 rounded-full text-center text-white font-bold">
-          {cardItemsNumber}
+          {cartItemsNumber}
         </span>
       </NavLink>
     </div>

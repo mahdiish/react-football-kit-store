@@ -5,12 +5,12 @@ import {
   changeLocation,
   changeSearchTerm,
 } from "./slices/formSlice";
-import { cardReducer, addCardItem, removeCardItem } from "./slices/cardSlice";
+import { cartReducer, addCartItem, removeCartItem } from "./slices/cartSlice";
 
 const store = configureStore({
   reducer: {
     form: formReducer,
-    card: cardReducer,
+    cart: cartReducer,
   },
 });
 
@@ -19,6 +19,6 @@ export {
   changeLeague,
   changeLocation,
   changeSearchTerm,
-  addCardItem,
-  removeCardItem,
+  addCartItem,
+  removeCartItem,
 };

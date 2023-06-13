@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import StorePage from "./pages/StorePage";
-import CardPage from "./pages/CardPage";
+import CartPage from "./pages/CartPage";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <div className="w-full h-full overflow-y-scroll bg-black px-3 py-4 sm:w-4/5 sm:ml-[20%]">
           <Routes>
             <Route path="/" element={<StorePage />} />
-            <Route path="/card" element={<CardPage />} />
+            <Route path="/cart" element={<CartPage />} />
           </Routes>
         </div>
       </div>

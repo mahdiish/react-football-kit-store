@@ -1,10 +1,10 @@
 import { useDispatch } from "react-redux";
-import { addCardItem } from "../store";
+import { addCartItem } from "../store";
 
 function KitItem({ item }) {
   const dispatch = useDispatch();
   const handleClick = () => {
-    dispatch(addCardItem(item));
+    dispatch(addCartItem(item));
   };
 
   return (
@@ -23,7 +23,7 @@ function KitItem({ item }) {
         onClick={handleClick}
         className="text-white text-base rounded-sm px-3.5 py-2 bg-orange-500 hover:bg-orange-600"
       >
-        Add to Card
+        Add to Cart
       </button>
     </div>
   );
