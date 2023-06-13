@@ -36,7 +36,7 @@ function StorePage() {
     zeroRenderedKitItems = (
       <div className="flex flex-col items-center pt-8">
         <TbMoodSad className="text-white text-6xl" />
-        <p className="text-white font-bold text-center m-3">
+        <p className="text-white text-base font-bold text-center m-3">
           Oops! There is not any item{" "}
         </p>
       </div>

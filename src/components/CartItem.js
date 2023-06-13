@@ -23,7 +23,7 @@ function CartItem({ item }) {
       </p>
       <MdDelete
         onClick={handleClick}
-        className="text-red-500 text-base text-2xl cursor-pointer"
+        className="text-red-500 text-2xl cursor-pointer"
       />
     </div>
   );

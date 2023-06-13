@@ -20,7 +20,7 @@ function CartPage() {
     renderedCartItems = (
       <div className="flex flex-col items-center pt-8">
         <SlBasket className="text-white text-6xl" />
-        <p className="text-white font-bold text-center m-3">
+        <p className="text-white text-base font-bold text-center m-3">
           Your cart is empty!{" "}
         </p>
       </div>
